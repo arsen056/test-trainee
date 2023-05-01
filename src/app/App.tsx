@@ -1,9 +1,9 @@
 import React from 'react';
+import {News} from "news";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>App</h1>
+  return (<div className='container'>
+    <News/>
     </div>
   );
 }
