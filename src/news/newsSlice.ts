@@ -1,6 +1,6 @@
 import {createAsyncThunk, createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {API} from "api";
-import {INewsState} from "api/types";
+import {API} from "common/api";
+import {INewsState} from "common/api/types";
 
 const initialState: INewsState = {
   totalResults: 0,

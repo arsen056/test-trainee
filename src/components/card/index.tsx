@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import s from './Card.module.css'
-import mockImage from 'assets/news-image.jpg'
+import mockImage from 'common/assets/news-image.jpg'
 
 type Props = {
   title: string

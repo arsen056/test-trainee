@@ -2,7 +2,7 @@ import React from 'react';
 import {Card} from "components/card";
 import s from 'components/news/News.module.css'
 
-import {useGetNews} from "hooks/useGetNews";
+import {useGetNews} from "common/hooks/useGetNews";
 
 export const News = () => {
   const news = useGetNews()

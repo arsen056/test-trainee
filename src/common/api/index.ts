@@ -1,5 +1,5 @@
 import axios from "axios";
-import {INewsState} from "api/types";
+import {INewsState} from "common/api/types";
 
 const instance = axios.create({
   baseURL: 'https://newsapi.org/v2/',
