@@ -1,6 +1,13 @@
 .card {
+  position: relative;
   max-width: 400px;
   box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+  padding: 20px 0;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .img {
@@ -9,4 +16,10 @@
 
 .description {
   padding: 10px;
+}
+
+.info {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }

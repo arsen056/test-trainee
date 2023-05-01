@@ -1,9 +1,11 @@
-import {INewsState} from "types";
-import {createSlice, PayloadAction} from "@reduxjs/toolkit";
+import {createAsyncThunk, createSlice, PayloadAction} from "@reduxjs/toolkit";
+import {API} from "api";
+import {INewsState} from "api/types";
 
 const initialState: INewsState = {
   totalResults: 0,
-  news: []
+  articles: [],
+  status: '',
 }
 
 const slice = createSlice({name: 'news/slice',
@@ -15,4 +17,17 @@ const slice = createSlice({name: 'news/slice',
   }
 })
 
+export const fetchNews = createAsyncThunk(
+  'news',
+  async (_, {dispatch}) => {
+    try {
+      const response = await API.getNews()
+      dispatch(setNews(response))
+    } catch (e) {
+      console.log(e)
+    }
+  }
+)
+
 export const newsReducer = slice.reducer
+export const {setNews} = slice.actions
