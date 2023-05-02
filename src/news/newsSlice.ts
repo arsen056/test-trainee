@@ -13,6 +13,15 @@ const slice = createSlice({name: 'news/slice',
   reducers: {
     setNews: (state, action: PayloadAction<INewsState>) => {
       return action.payload
+    },
+    addToFavorites: (state, action: PayloadAction<{ url: string, isFavorite: boolean}>) => {
+      const newsItem = state.articles.find(e => e.url === action.payload.url)
+      if (newsItem) newsItem.isFavorite = action.payload.isFavorite
+    },
+    removeNews: (state, action: PayloadAction<string>) => {
+      const news = state.articles
+      const index = news.findIndex(newsItem => newsItem.url === action.payload)
+      if (index !== -1) news.splice(index, 1)
     }
   }
 })
@@ -30,4 +39,4 @@ export const fetchNews = createAsyncThunk(
 )
 
 export const newsReducer = slice.reducer
-export const {setNews} = slice.actions
+export const {setNews, addToFavorites, removeNews} = slice.actions

@@ -15,7 +15,10 @@ export const News = () => {
           title={newsItem.title}
           description={newsItem.description}
           img={newsItem.urlToImage}
-          date={newsItem.publishedAt}/> )
+          date={newsItem.publishedAt}
+          isFavorite={newsItem.isFavorite}
+          url={newsItem.url}
+        /> )
       }
     </ul>
   );

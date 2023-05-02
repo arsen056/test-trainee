@@ -1,0 +1,17 @@
+.like {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: 0;
+}
+
+.filled {
+  background-image: url("../../common/assets/like-filled.svg");
+}
+
+.unFilled {
+  background-image: url("../../common/assets/like-unfilled.svg");
+}

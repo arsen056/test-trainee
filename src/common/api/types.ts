@@ -13,4 +13,5 @@ interface INews {
   urlToImage: string
   publishedAt: string
   content: string
+  isFavorite: boolean
 }
