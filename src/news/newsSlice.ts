@@ -5,6 +5,7 @@ import {INewsState} from "common/api/types";
 const initialState: INewsState = {
   totalResults: 0,
   articles: [],
+  isFavorites: false,
   status: '',
 }
 
@@ -22,7 +23,13 @@ const slice = createSlice({name: 'news/slice',
       const news = state.articles
       const index = news.findIndex(newsItem => newsItem.url === action.payload)
       if (index !== -1) news.splice(index, 1)
-    }
+    },
+    changeFilter: (state) => {
+      state.isFavorites = !state.isFavorites
+    },
+    resetNews: (state) => {
+      state.articles = []
+    },
   }
 })
 
@@ -39,4 +46,4 @@ export const fetchNews = createAsyncThunk(
 )
 
 export const newsReducer = slice.reducer
-export const {setNews, addToFavorites, removeNews} = slice.actions
+export const {setNews, addToFavorites, removeNews, changeFilter, resetNews} = slice.actions

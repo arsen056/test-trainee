@@ -1,6 +1,6 @@
 .newsList {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+  gap: 40px;
+  padding: 10px 0 20px;
 }

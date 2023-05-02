@@ -8,8 +8,6 @@ const rootReducer = combineReducers({
   news: newsReducer
 });
 
-export type RootStateType = ReturnType<typeof rootReducer>
-
 const persistConfig = {
   key: 'root',
   storage,
@@ -23,3 +21,5 @@ export const store = configureStore({
     serializableCheck: {ignoredActions: [PERSIST]},
   }).prepend(thunk)
 });
+
+export type RootStateType = ReturnType<typeof rootReducer>

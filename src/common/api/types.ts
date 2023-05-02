@@ -2,9 +2,10 @@ export interface INewsState {
   articles: INews[]
   status: string,
   totalResults: number
+  isFavorites: boolean
 }
 
-interface INews {
+export interface INews {
   source: { id: string, name: string }
   author: string
   title: string
@@ -15,3 +16,5 @@ interface INews {
   content: string
   isFavorite: boolean
 }
+
+export type FilterType = 'all' | 'favorites'
