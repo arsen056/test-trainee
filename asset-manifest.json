@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/test-trainee/static/css/main.83f4bb35.css",
-    "main.js": "/test-trainee/static/js/main.d87a6a7c.js",
+    "main.js": "/test-trainee/static/js/main.5e56e890.js",
     "static/js/787.2bdfcf2c.chunk.js": "/test-trainee/static/js/787.2bdfcf2c.chunk.js",
     "static/media/news-image.jpg": "/test-trainee/static/media/news-image.3c9d5296f416bea00f45.jpg",
     "static/media/delete.svg": "/test-trainee/static/media/delete.a7951ad9faaf0fce103f.svg",
@@ -9,11 +9,11 @@
     "static/media/like-unfilled.svg": "/test-trainee/static/media/like-unfilled.2ada90cf7facf58b31ae.svg",
     "static/media/like-filled.svg": "/test-trainee/static/media/like-filled.99416e5452d5e090dfc7.svg",
     "main.83f4bb35.css.map": "/test-trainee/static/css/main.83f4bb35.css.map",
-    "main.d87a6a7c.js.map": "/test-trainee/static/js/main.d87a6a7c.js.map",
+    "main.5e56e890.js.map": "/test-trainee/static/js/main.5e56e890.js.map",
     "787.2bdfcf2c.chunk.js.map": "/test-trainee/static/js/787.2bdfcf2c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.83f4bb35.css",
-    "static/js/main.d87a6a7c.js"
+    "static/js/main.5e56e890.js"
   ]
 }
