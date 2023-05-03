@@ -1,20 +1,16 @@
 export interface INewsState {
   articles: INews[]
-  status: string,
-  totalResults: number
+  totalArticles: number
   isFavorites: boolean
 }
 
 export interface INews {
-  source: { id: string, name: string }
-  author: string
+  source: { url: string, name: string }
   title: string
   description: string
   url: string
-  urlToImage: string
+  image: string
   publishedAt: string
   content: string
   isFavorite: boolean
 }
-
-export type FilterType = 'all' | 'favorites'

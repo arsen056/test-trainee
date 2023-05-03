@@ -3,10 +3,9 @@ import {API} from "common/api";
 import {INewsState} from "common/api/types";
 
 const initialState: INewsState = {
-  totalResults: 0,
+  totalArticles: 0,
   articles: [],
   isFavorites: false,
-  status: '',
 }
 
 const slice = createSlice({name: 'news/slice',
