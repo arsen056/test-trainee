@@ -9,7 +9,7 @@ export const News = () => {
 
   return (
     <ul className={s.newsList}>
-      {news.map(newsItem =>
+      {news.length ? news.map(newsItem =>
         <Card
           key={newsItem.url}
           title={newsItem.title}
@@ -18,7 +18,7 @@ export const News = () => {
           date={newsItem.publishedAt}
           isFavorite={newsItem.isFavorite}
           url={newsItem.url}
-        /> )
+        />) : <h2 className={s.listEmpty}>Список пуст</h2>
       }
     </ul>
   );
