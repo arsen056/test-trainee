@@ -18,7 +18,7 @@ export const News = () => {
           date={newsItem.publishedAt}
           isFavorite={newsItem.isFavorite}
           url={newsItem.url}
-        />) : <h2 className={s.listEmpty}>Список пуст</h2>
+        />) : <h2 className={s.listEmpty}>Oops list empty...</h2>
       }
     </ul>
   );
